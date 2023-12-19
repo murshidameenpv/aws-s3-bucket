@@ -15,7 +15,7 @@ const s3 = new AWS.S3({ apiVersion: '2006-03-01' });
 // your code, you’re trying to get the bucket name from process.argv[2], which represents the third command line argument when running your script
 //node s3_createBucket.js my-bucket
 var bucketParams = {
-  Bucket : 'my-bucket'+ uuidv4()
+  Bucket : 'my-bucket-' + uuidv4()
 };
 
 // call S3 to create the bucket
