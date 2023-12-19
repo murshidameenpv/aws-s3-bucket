@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 import AWS from 'aws-sdk';
-import { dragonData } from './dragons.js';
+import { dragonData } from './Data/dragons.js';
 dotenv.config();
 
 AWS.config.update({
